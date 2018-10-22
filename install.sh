@@ -8,7 +8,8 @@ then
   echo "  - silver searcher"
   echo "  - zsh"
   echo "  - vim (vim-gnome | macvim)"
-  echo "  - google-chrome (mac)"
+  echo "  - google-chrome "
+  echo "  - spotify "
   echo "  - iterm2 (mac)"
   echo "  - atom (mac)"
 
@@ -18,7 +19,7 @@ then
       gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
       curl -sSL https://get.rvm.io | bash -s stable --ruby
       sudo usermod -a -G rvm `whoami`
-      sudo apt-get install ruby
+      sudo apt-get install -y ruby
       ;;
     Darwin )
       gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
