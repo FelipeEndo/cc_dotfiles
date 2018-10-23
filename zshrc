@@ -75,3 +75,9 @@ setopt interactivecomments
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
+
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i

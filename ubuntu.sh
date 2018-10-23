@@ -25,7 +25,7 @@ echo "======================================================"
 echo
 sudo snap install spotify
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/pwittchen/spotify-cli-linux/master/install.sh)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/FelipeEndo/spotify-cli-linux/master/install.sh)"
 tmux source ~/.tmux.conf
 ~/.tmux/plugins/tpm/bin/install_plugins
 
@@ -38,14 +38,6 @@ wget $(curl -s https://api.github.com/repos/ramboxapp/community-edition/releases
 sudo dpkg -i rambox.deb
 sudo apt-get install -f -y
 sudo rm -f rambox.deb
-
-echo "======================================================"
-echo "Installing Solarized."
-echo "======================================================"
-echo
-
-git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
-~/.cc_dotfiles/gnome-terminal-colors-solarized/install.sh
 
 echo "======================================================"
 echo "Installing Docker and Docker Compose."
@@ -72,6 +64,14 @@ echo "======================================================"
 echo
 sudo groupadd docker
 sudo usermod -aG docker $USER
+
+echo "======================================================"
+echo "Installing Solarized."
+echo "======================================================"
+echo
+
+git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+~/.cc_dotfiles/gnome-terminal-colors-solarized/install.sh
 
 echo 'Change your terminal window to Run command as login shell and restart'
 echo 'You can find more information about this on' \
