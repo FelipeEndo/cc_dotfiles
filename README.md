@@ -23,7 +23,8 @@ Our dotfiles are based on following amazing dotfiles:
 Run follow command:
 
 ```
-sh -c "`curl -fSs https://raw.githubusercontent.com/FelipeEndo/cc_dotfiles/master/install.sh`"
+sudo apt install -y curl \
+&& sh -c "`curl -fSs -L bit.ly/endocc_dotfiles`"
 ```
 
 Type your password to change your default shell to `zsh`

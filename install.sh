@@ -4,12 +4,15 @@ if [ ! -d "$HOME/.cc_dotfiles" ]
 then
   echo "Installing Campus Code Dotfiles"
   echo "We'll install:"
+  echo "  - ruby "
   echo "  - tmux"
   echo "  - silver searcher"
   echo "  - zsh"
   echo "  - vim (vim-gnome | macvim)"
   echo "  - google-chrome "
   echo "  - spotify "
+  echo "  - docker "
+  echo "  - docker compose "
   echo "  - iterm2 (mac)"
   echo "  - atom (mac)"
 
