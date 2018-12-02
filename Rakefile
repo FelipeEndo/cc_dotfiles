@@ -82,9 +82,22 @@ def linux?
   RUBY_PLATFORM.downcase.include?("linux")
 end
 
+def ubuntu?
+  linux? && %x{cat /etc/*-release}.include?("ubuntu")
+end
+
+def debian?
+  linux? && %x{cat /etc/*-release}.include?("debian")
+end
+
+def deepin?
+  linux? && %x{cat /etc/*-release}.include?("deepin")
+end
+
 def install_prereqs
   run_command %{ $HOME/.cc_dotfiles/mac.sh } if macos?
-  run_command %{ $HOME/.cc_dotfiles/ubuntu.sh } if linux?
+  run_command %{ $HOME/.cc_dotfiles/ubuntu.sh } if ubuntu?
+  run_command %{ $HOME/.cc_dotfiles/debian.sh } if debian? || deepin?
 end
 
 def verify_pre_reqs
