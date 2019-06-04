@@ -20,16 +20,6 @@ echo
 sudo apt-get install google-chrome-stable -y
 
 echo "======================================================"
-echo "Installing Spotify."
-echo "======================================================"
-echo
-sudo snap install spotify
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/FelipeEndo/spotify-cli-linux/master/install.sh)"
-tmux source ~/.tmux.conf
-~/.tmux/plugins/tpm/bin/install_plugins
-
-echo "======================================================"
 echo "Installing Rambox"
 echo "======================================================"
 echo
