@@ -10,7 +10,6 @@ then
   echo "  - zsh"
   echo "  - vim (vim-gnome | macvim)"
   echo "  - google-chrome "
-  echo "  - spotify "
   echo "  - docker "
   echo "  - docker compose "
   echo "  - iterm2 (mac)"
