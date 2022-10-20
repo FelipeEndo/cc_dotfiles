@@ -1,4 +1,4 @@
-CAMPUS CODE Dotfiles
+Dotfiles
 ====================
 
 ## Source of inspiration
